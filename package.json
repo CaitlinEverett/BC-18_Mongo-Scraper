@@ -1,0 +1,19 @@
+{
+  "name": "mongoscraper",
+  "version": "1.0.0",
+  "description": "bootcamp mongo express handlebars mongoose cheerio heroku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaitlinEverett/mongoScraper.git"
+  },
+  "author": "caitlin everett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaitlinEverett/mongoScraper/issues"
+  },
+  "homepage": "https://github.com/CaitlinEverett/mongoScraper#readme"
+}
