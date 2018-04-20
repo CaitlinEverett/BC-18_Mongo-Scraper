@@ -15,16 +15,16 @@ const Article = require("./models/Article.js");
 const port = process.env.PORT || 3000;
 
 // Express Server
-const appllication = express();
+const application = express();
 
 // set Express to use Morgan and Body Parser
-appllication.use(logger("dev"));
-appllication.use(bodyParser.urlencoded({
+application.use(logger("dev"));
+application.use(bodyParser.urlencoded({
   extended: false
 }));
 
 // Make public the default dir
-appllication.use(express.static("public"));
+application.use(express.static("public"));
 
 
 //Set up Handlebars
@@ -51,7 +51,7 @@ mongoose.connect(MONGODB_URI, {
 
 
 // Mongoose Schema + Mongo Database configuration 
-mongoose.connect("mongodb://heroku_wzfjn96q:<dbpassword>@ds113046.mlab.com:13046/heroku_wzfjn96q");
+// mongoose.connect("mongodb://heroku_wzfjn96q:<dbpassword>@ds113046.mlab.com:13046/heroku_wzfjn96q");
 //mongoose.connect("mongodb://localhost/mongoscraper");
 var db = mongoose.connection;
 
