@@ -1,9 +1,9 @@
 # mongoScraper
-Bootcamp Assignnment: Web app that lets users view and le avecomments on the latest news.  
+Bootcamp Assignnment: Web app that lets users view and leave comments on the latest news.
 
-# All the News That's Fit to Scrape
+# I am not Cambridge Analytica, but I know basically how that whole thing worked...  
 
-  1. Whenever a user visits the site, the app scrapes stories from the onion and displays them for the user. Each scraped article is saved to the application database. The app scrapes and displays the following information for each article:
+  1. Whenever a user visits the site, the app scrapes stories from the onion and displays them for the user. Each scraped article is saved to the app database. The app scrapes and displays the following information for each article:
 
      * Headline - the title of the article
 

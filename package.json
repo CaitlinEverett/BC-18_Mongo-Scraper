@@ -4,7 +4,8 @@
   "description": "bootcamp mongo express handlebars mongoose cheerio heroku",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,19 @@
   "bugs": {
     "url": "https://github.com/CaitlinEverett/mongoScraper/issues"
   },
-  "homepage": "https://github.com/CaitlinEverett/mongoScraper#readme"
+  "homepage": "https://github.com/CaitlinEverett/mongoScraper#readme",
+  "keywords": [
+    "homework",
+    "nwbc",
+    "node",
+    "mongo",
+    "scraper"
+  ],
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.17",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7"
+  }
 }

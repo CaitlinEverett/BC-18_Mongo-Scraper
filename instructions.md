@@ -22,7 +22,7 @@ In this assignment, you'll create a web app that lets users view and leave comme
 
 8. request
 
-9. **NOTE**: If you want to earn complete credit for your work, you must use all six of these packages in your assignment.
+9. **Comment**: If you want to earn complete credit for your work, you must use all six of these packages in your assignment.
 
 10. In order to deploy your project to Heroku, you must set up an mLab provision. mLab is remote MongoDB database that Heroku supports natively. Follow these steps to get it running:
 
@@ -50,7 +50,7 @@ mongoose.connect(MONGODB_URI, {
 
 * This code should connect mongoose to your remote mongolab database if deployed, but otherwise will connect to the local mongoHeadlines database on your computer.
 
-14. [Watch this demo of a possible submission](mongo-homework-demo.mov). See the deployed demo application [here](http://nyt-mongo-scraper.herokuapp.com/).
+14. [Watch this demo of a possible submission](mongo-homework-demo.mov). See the deployed demo app [here](http://nyt-mongo-scraper.herokuapp.com/).
 
 15. Your site doesn't need to match the demo's style, but feel free to attempt something similar if you'd like. Otherwise, just be creative!
 
@@ -58,7 +58,7 @@ mongoose.connect(MONGODB_URI, {
 
 * Create an app that accomplishes the following:
 
-  1. Whenever a user visits your site, the app should scrape stories from a news outlet of your choice and display them for the user. Each scraped article should be saved to your application database. At a minimum, the app should scrape and display the following information for each article:
+  1. Whenever a user visits your site, the app should scrape stories from a news outlet of your choice and display them for the user. Each scraped article should be saved to your app database. At a minimum, the app should scrape and display the following information for each article:
 
      * Headline - the title of the article
 
@@ -82,7 +82,7 @@ mongoose.connect(MONGODB_URI, {
 
   * If your app deletes stories every time someone visits, your users won't be able to see any comments except the ones that they post.
 
-* Here's an EXAMPLE implementation of the application folder structure:
+* Here's an EXAMPLE implementation of the app folder structure:
 
 ![folder structure](Images/folder-structure-annotated1.jpg)
 ### Helpful Links
@@ -101,7 +101,7 @@ Attempt to complete homework assignment as described in instructions. If unable 
 
 ### Hosting on Heroku
 
-Now that we have a backend to our applications, we use Heroku for hosting. Please note that while **Heroku is free**, it will request credit card information if you have more than 5 applications at a time or are adding a database.
+Now that we have a backend to our apps, we use Heroku for hosting. Please Comment that while **Heroku is free**, it will request credit card information if you have more than 5 apps at a time or are adding a database.
 
 Please see [Heroku’s Account Verification Information](https://devcenter.heroku.com/articles/account-verification) for more details.
 

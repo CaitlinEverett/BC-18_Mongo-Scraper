@@ -22,9 +22,9 @@ var ArticleSchema = new Schema({
     type: Boolean,
     default: false
   },
-  notes: [{
+  Comments: [{
      type: Schema.Types.ObjectId,
-     ref: "Note"
+     ref: "Comment"
   }]
 });
 
