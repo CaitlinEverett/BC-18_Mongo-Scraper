@@ -51,6 +51,7 @@ app.set("view engine", "handlebars");
 mongoose.connect("mongodb://localhost/nytimesfinal123");
 
 
+
 // Listen on port
 app.listen(port, function() {
   console.log("App running on port " + port);
