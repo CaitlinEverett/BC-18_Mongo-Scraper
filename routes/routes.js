@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express.Router();
-const db = require('../models')
+const db = require('../models/')
 const Comment = require('../models/Comment')
 
 // / Our scraping tools
@@ -137,7 +137,7 @@ app.post("/comments/save/:id", function(req, res) {
     body: req.body.text,
     article: req.params.id
   });
-  console.log(req.body)
+  // console.log(req.body)
   // And save the new note the db
   newComment.save(function(error, comment) {
     // Log any errors
