@@ -48,7 +48,7 @@ app.engine("handlebars", exphbs({
 app.set("view engine", "handlebars");
 
 // Database configuration with mongoose
-mongoose.connect("mongodb://localhost/asdfasdfasd");
+mongoose.connect("mongodb://localhost/nytimesfinal123");
 
 
 // Listen on port
