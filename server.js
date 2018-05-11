@@ -10,11 +10,6 @@ const router = require('./routes/routes');
 //replace mongoose promises (incase not working?)
 mongoose.Promise = Promise;
 
-// Require all models
-// var db = require("./models");
-var Comment = require("./models/Comment.js");
-var Article = require("./models/Article.js");
-
 // Scraping tools
 var axios = require("axios");
 var cheerio = require("cheerio");
@@ -48,8 +43,17 @@ app.engine("handlebars", exphbs({
 app.set("view engine", "handlebars");
 
 // Database configuration with mongoose
-mongoose.connect("mongodb://localhost/nytimesfinal123");
+// mongoose.connect("mongodb://localhost/nytimesfinal123");
 
+// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nytimesfinal123";
+
+// Set mongoose to leverage built in JavaScript ES6 Promises
+// Connect to the Mongo DB
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI, {
+  useMongoClient: true
+});
 
 
 // Listen on port
