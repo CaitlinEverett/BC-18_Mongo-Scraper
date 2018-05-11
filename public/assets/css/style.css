@@ -3,11 +3,11 @@ body {
     background-color: #223344;
 }
 
-.deleteNote {
+.deletecomment {
 	display: inline-block;
 }
 
-.previousNotes {
+.previouscomments {
     display: inline-block;
     width: 90%
 }

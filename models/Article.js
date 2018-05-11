@@ -1,6 +1,6 @@
 // Require mongoose
 var mongoose = require("mongoose");
-var Note = require("./Note");
+var comment = require("./Comment");
 // Create Schema class
 var Schema = mongoose.Schema;
 
@@ -12,7 +12,7 @@ var ArticleSchema = new Schema({
   },
   summary: {
     type: String,
-    required: true
+    required: false
   },
   link: {
     type: String,
@@ -22,7 +22,7 @@ var ArticleSchema = new Schema({
     type: Boolean,
     default: false
   },
-  Comments: [{
+  comments: [{
      type: Schema.Types.ObjectId,
      ref: "Comment"
   }]

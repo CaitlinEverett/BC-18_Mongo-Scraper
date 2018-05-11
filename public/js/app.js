@@ -3,8 +3,8 @@ $("#scrape").on("click", function() {
     $.ajax({
         method: "GET",
         url: "/scrape",
-    }).done(function(data) {
-        console.log(data)
+    }).then(function(data) {
+        console.log(data);
         window.location = "/"
     })
 });
@@ -21,7 +21,7 @@ $(".save").on("click", function() {
     $.ajax({
         method: "POST",
         url: "/articles/save/" + thisId
-    }).done(function(data) {
+    }).then(function(data) {
         window.location = "/"
     })
 });
@@ -32,44 +32,44 @@ $(".delete").on("click", function() {
     $.ajax({
         method: "POST",
         url: "/articles/delete/" + thisId
-    }).done(function(data) {
+    }).then(function(data) {
         window.location = "/saved"
     })
 });
 
-//Handle Save Note button
-$(".saveNote").on("click", function() {
+//Handle Save comment button
+$(".savecomment").on("click", function() {
     var thisId = $(this).attr("data-id");
-    if (!$("#noteText" + thisId).val()) {
-        alert("please enter a note to save")
+    if (!$("#commentText" + thisId).val()) {
+        alert("please enter a comment to save")
     }else {
       $.ajax({
             method: "POST",
-            url: "/notes/save/" + thisId,
+            url: "/comments/save/" + thisId,
             data: {
-              text: $("#noteText" + thisId).val()
+              text: $("#commentText" + thisId).val()
             }
-          }).done(function(data) {
+          }).then(function(data) {
               // Log the response
               console.log(data);
-              // Empty the notes section
-              $("#noteText" + thisId).val("");
-              $(".modalNote").modal("hide");
+              // Empty the comments section
+              $("#commentText" + thisId).val("");
+              $(".modalcomment").modal("hide");
               window.location = "/saved"
           });
     }
 });
 
-//Handle Delete Note button
+//Handle Delete comment button
 $(".deleteComment").on("click", function() {
-    var noteId = $(this).attr("data-note-id");
+    var commentId = $(this).attr("data-comment-id");
     var articleId = $(this).attr("data-article-id");
     $.ajax({
         method: "DELETE",
-        url: "/notes/delete/" + noteId + "/" + articleId
-    }).done(function(data) {
+        url: "/comments/delete/" + commentId + "/" + articleId
+    }).then(function(data) {
         console.log(data)
-        $(".modalNote").modal("hide");
+        $(".modalcomment").modal("hide");
         window.location = "/saved"
     })
 });
