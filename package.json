@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CaitlinEverett/mongoScraper.git"
+    "url": "git+https://github.com/CaitlinEverett/BC-18_Mongo-Scraper.git"
   },
   "author": "caitlin everett",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CaitlinEverett/mongoScraper/issues"
+    "url": "https://github.com/CaitlinEverett/BC-18_Mongo-Scraper/issues"
   },
-  "homepage": "https://github.com/CaitlinEverett/mongoScraper#readme",
+  "homepage": "https://github.com/CaitlinEverett/BC-18_Mongo-Scraper/#readme",
   "keywords": [
     "homework",
     "nwbc",
