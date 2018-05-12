@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express.Router();
-const db = require('../models/')
+const db = require('../models/index.js')
 const Comment = require('../models/Comment')
 
 // / Our scraping tools
