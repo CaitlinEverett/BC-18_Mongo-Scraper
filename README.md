@@ -8,4 +8,4 @@ Bootcamp Assignnment: Web app that lets users view and leave comments on the lat
 # Current State...  
 Some things are not working - like heroku deployment.  Working on that still.  But the routing/basic ideas are all here now:
 
-![Scraper Demo Gif](Images/img.gif)
+![Scraper Demo Gif](images/img.gif)
